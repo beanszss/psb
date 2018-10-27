@@ -54,16 +54,19 @@
  * NOTE: If you change these, also change the error_reporting() code below
  */
 
-$locahostEnv = array(
-	'127.0.0.1',
-	'::1'
-);
+// $locahostEnv = array(
+// 	'127.0.0.1',
+// 	'::1'
+// );
 
-if(in_array($_SERVER['REMOTE_ADDR'], $locahostEnv)){
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
-}else{
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'production');
-}
+// if(in_array($_SERVER['REMOTE_ADDR'], $locahostEnv)){
+// 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+// }else{
+// 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'production');
+// }
+// 
+
+define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 
 /*
  *---------------------------------------------------------------
